@@ -1,0 +1,232 @@
+/* Overall Page Styling */
+body {
+    font-family: 'Schoolbell', cursive, sans-serif;
+    background-color: #fce4ec; /* Light pink background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    font-family: 'Schoolbell', cursive, sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+/* Header */
+h1 {
+    font-family: 'Schoolbell', cursive, sans-serif;
+    text-align: center;
+    color: #d81b60; /* Dark pink color */
+    font-size: 2.5rem;
+}
+
+/* Buttons */
+.btn {
+    font-family: 'Schoolbell', cursive, sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #ec407a; /* Medium pink */
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    /* margin-left: 500px;  */
+}
+
+.btn[name="add"] {
+    font-family: 'Schoolbell', cursive, sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #ec407a; /* Medium pink */
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-left: 500px;
+}
+
+.btn:hover {
+    background-color: #d81b60; /* Dark pink */
+    transform: scale(1.05); /* Slight grow on hover */
+}
+
+/* Dessert List */
+.dessert-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.dessert-item {
+    
+    width: 30%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.dessert-item:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dessert-item img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.dessert-item h2 {
+    font-family: 'Schoolbell', cursive, sans-serif;
+    font-size: 1.8rem;
+    color: #ad1457; /* Deep pink */
+}
+
+.dessert-item p {
+    font-family: 'Schoolbell', cursive, sans-serif;
+    color: #555;
+    font-size: 1rem;
+}
+
+.dessert-item .price {
+    font-family: 'Schoolbell', cursive, sans-serif;
+    font-size: 1.2rem;
+    color: #d81b60; /* Dark pink */
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+.navbar {
+    font-family: 'Schoolbell', cursive, sans-serif;
+    background-color: #f8bbd0; /* Light pink */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #ec407a; /* Pink border */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    font-family: 'Schoolbell', cursive, sans-serif;
+    color: #ad1457; /* Dark pink */
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #f48fb1; /* Lighter pink */
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.navbar ul li a:hover {
+    background-color: #ec407a; /* Medium pink */
+    transform: scale(1.05); /* Slight grow */
+}
+
+/* Search Form in Navbar */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    font-family: 'Schoolbell', cursive, sans-serif;
+    padding: 8px;
+    border: 1px solid #ec407a;
+    border-radius: 100px;
+    margin-right: 200px;
+}
+
+.search-form button {
+    font-family: 'Schoolbell', cursive, sans-serif;
+    padding: 8px 16px;
+    background-color: #ec407a;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #d81b60;
+}
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-family: 'Schoolbell', cursive, sans-serif;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #ad1457;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    font-family: 'Schoolbell', cursive, sans-serif;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ec407a;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    font-family: 'Schoolbell', cursive, sans-serif;
+    padding: 10px 20px;
+    background-color: #ec407a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #d81b60;
+    transform: scale(1.05);
+}
+
+/* Adjustments for mobile devices */
+@media (max-width: 768px) {
+    .dessert-item {
+        width: 90%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin-bottom: 10px;
+    }
+}
+
